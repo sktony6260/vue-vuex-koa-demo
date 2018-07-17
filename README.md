@@ -41,7 +41,7 @@ npm start
 ```
 start server
 ```
-npm run mockserer
+npm run mockserver
 ```
 
 # ***thanks***
