@@ -1,7 +1,7 @@
-import Koa from'koa';
-import path from'path';
-import bodyParser from'koa-bodyparser';
-import api from './api';
+import Koa from "koa";
+import path from "path";
+import bodyParser from "koa-bodyparser";
+import api from "./api";
 const app = new Koa();
 
 app.use(bodyParser());

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mt-header title="ddd">
+    <mt-header title="todo demo">
       <router-link to="/" slot="left">
         <mt-button icon="back">back</mt-button>
       </router-link>

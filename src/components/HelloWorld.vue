@@ -81,46 +81,16 @@
         </a>
       </li>
     </ul>
-    <div>{{ count }}</div>
-    <div><mt-button type="primary" size="small" @click.native="increaseCount">increaseCount</mt-button></div><br>
-    <div><mt-button type="primary" size="small" @click.native="decreaseCount">decreaseCount</mt-button></div>
-    <div class="mint-swipe">
-      <mt-swipe :auto="4000">
-      <mt-swipe-item>1</mt-swipe-item>
-      <mt-swipe-item>2</mt-swipe-item>
-      <mt-swipe-item>3</mt-swipe-item>
-    </mt-swipe>      
-    </div>
   </div>
 </template>
 
 <script>
-import Vue from "vue";
-import { mapGetters, mapState, mapActions } from "vuex";
-import { Button, Cell, Swipe, SwipeItem } from "mint-ui";
-Vue.component(Swipe.name, Swipe);
-Vue.component(SwipeItem.name, SwipeItem);
-Vue.component(Button.name, Button);
-Vue.component(Cell.name, Cell);
 export default {
   name: "HelloWorld",
   data() {
     return {
-      increaseLoding: false,
-      decreadeLoding: false,
       msg: "Welcome to Your Vue.js App"
     };
-  },
-  mounted() {
-    // console.log(this.count);
-    //this.increaseCount();
-    console.log(this.count);
-  },
-  computed: {
-    ...mapGetters("counter", ["count"])
-  },
-  methods: {
-    ...mapActions("counter", ["increaseCount", "decreaseCount"])
   }
 };
 </script>
